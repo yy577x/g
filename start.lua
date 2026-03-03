@@ -81,7 +81,7 @@ done
 Run:close()
 redis:del(Server_Done.."id")
 redis:del(Server_Done.."token")
-os.execute('cp -a ../uu/ ../'..Json_Info.result.username..' && rm -fr ~/uu')
+os.execute('cp -a ../g/ ../'..Json_Info.result.username..' && rm -fr ~/g')
 os.execute('cd && cd '..Json_Info.result.username..';chmod +x start;chmod +x Run;./Run')
 end
 Information = dofile('./sudo.lua')
@@ -706,3 +706,4 @@ end --- end data
 end --- end Call( 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 Runbot.run(Call)
+
